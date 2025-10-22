@@ -48,7 +48,11 @@
         </div>
 
         <div>
-          <img alt="Banner do curso" src="./resources/images/banner_01.jpeg" width="720"/>
+          <img usemap="#store_link" alt="Banner do curso" src="./resources/images/banner_01.jpeg" width="720"/>
+          <map name="store_link">
+            <area shape="rect" target="_blank" alt="Link para a referencia do oculos" title="Óculos Digital" href="https://www.amazon.com" coords="450,40,563,95">
+            <area shape="rect" target="_blank" alt="Link para o dashboard" title="Dashboard" href="https://www.google.com" coords="273,63,483,339">
+          </map>
         </div>
       </section>
       <section>
@@ -78,6 +82,48 @@
             <dt>1. Por quê Módulos e não Disciplinas?</dt>
             <dd>Módulos permitem que os alunos tenham conhecimento a mais áreas de conhecimento, pois são limitados por horas e substituídos por outros. Além disso, o sistema de avaliação dos módulos tem uma ênfase notória para os trabalhos de pesquisa, apresentações e atividades práticas que valem 60% da nota final, ao contrário dos testes que valem 50%</dd>
           </dl>     
+        </div>
+      </section>
+      
+      <!-- Secão dos contactos -->
+      <section>
+        <div>
+          <div><h3>Entre em contacto</h3></div>    
+          <div>
+            <!-- Informações de contacto -->
+            <div>
+              <dl>
+                <dt>asibd.eicm@gmail.com</dt>
+                <dd>Email principal do curso</dd>
+                <dt>2324543</dt>
+                <dd>Telefone oficial do curso</dd>
+              </dl>
+            </div>
+            <!-- Formulario de contacto -->
+            <div>
+              <form action="#" method="POST">
+                <div>
+                  <label for="name">Nome:</label><br>
+                  <input type="text" id="name" name="name" placeholder="Nome do utilizador" required> <br><br>
+                </div>
+                <div>
+                  <label for="email">Email:</label><br>
+                  <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required> <br><br>
+                </div>
+                <div>
+                  <label for="birth">Data de Nascimento:</label><br>
+                  <input type="date" id="birth" name="birth" placeholder="DD/MM/YYYY" required> <br><br>
+                </div>
+                <div>
+                  <p>Genero</p>
+                  <input type="radio" id="male" name="gender" value="M">
+                  <label for="male">Masculino</label><br>
+                  <input type="radio" id="female" name="gender" value="F">
+                  <label for="male">Feminino</label><br>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
