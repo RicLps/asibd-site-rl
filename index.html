@@ -112,7 +112,7 @@
                 </div>
                 <div>
                   <label for="birth">Data de Nascimento:</label><br>
-                  <input type="date" id="birth" name="birth" placeholder="DD/MM/YYYY" required> <br><br>
+                  <input type="date" id="birth" name="birth" placeholder="DD/MM/YYYY"> <br><br>
                 </div>
                 <div>
                   <p>Genero</p>
@@ -120,6 +120,35 @@
                   <label for="male">Masculino</label><br>
                   <input type="radio" id="female" name="gender" value="F">
                   <label for="male">Feminino</label><br>
+                </div>
+                <div>
+                  <p>Assunto do Contacto</p>
+                  <input type="checkbox" id="info_modules" name="info_modules" value="Informações sobre Módulos">
+                  <label for="info_modules">Informação sobre móduls</label><br><br>
+                  <input type="checkbox" id="entry_profile" name="summary" value="Perfil de Entrada">
+                  <label for="entry_profile">Informação sobre móduls</label><br><br>
+                  <input type="checkbox" id="program" name="summary" value="Informação do Plano Formativo">
+                  <label for="program">Informação do Plano Formativo</label><br><br>
+                </div>
+                <div>
+                  <select id="nactionality" name="nactionality" >
+                    <option value="">--Selecionar uma Opção</option>
+                    <option value="Caboverdiana">CaboVerdiana</option>
+                    <option value="Portuguesa">Portuguesa</option>
+                    <option value="Brasileira">Brasileira</option>
+                  </select><br><br>
+                </div>
+                <div>
+                  <label for="message">Menssagem</label><br>
+                  <textarea id="message" name="message" rows="4" cols="50" placeholder="Por favor escreva a sua mesagem de forma clara e resumida"></textarea><br><br>
+                </div>
+                <div>
+                  <label for="attachement">Carregue um arquivo</label>
+                  <input type="file" id="attachement" name="attachement"><br><br>
+                </div>
+                <div>
+                  <input type="reset" value="Limpar os Campos">
+                  <input type="submit" value="Enviar">
                 </div>
               </form>
             </div>
