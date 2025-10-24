@@ -1,0 +1,12 @@
+p, div {
+  color: blue;
+}
+
+nav {
+  background-color: yellow;
+}
+
+#content {
+  background: black;
+  color: #ffffff;
+}
