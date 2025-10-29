@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #242625;
+}
+
+nav {
+  background-color: #edf9f1;
+}
+
+.main-container{
+  font-size: 16px;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+#contacts {
+  background-color: #c7ccca;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #33C480;
+}
+
+.link :hover {
+  color: #33C480;
+}

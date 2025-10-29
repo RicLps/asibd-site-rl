@@ -3,31 +3,34 @@
 <html lang="pt">
 	<!--O bloco responsavel por definir os itens de cabecalho da pagina, incluindo o proprio titulo-->
 	<head>
-		<meta charset="UTF-8"/>
+    <!--<link rel="stylesheet" type="text/css" href="styles/reset.css">-->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <meta charset="UTF-8"/>
 		<title>Curso ASIBD - EICM_GDC</title>
 	</head>
-	<!--Divisao do bloco responsavel por representar os conteudos no navegador-->
-	<body>
+
+  <!--Divisao do bloco responsavel por representar os conteudos no navegador-->
+	
+  <body>
 		<header>
 			<nav>
 				<div>
 					<img width="120" alt»"Logo do curso" src="./resources/images/logo.png"/>
 				</div>
-
 				<div>
 					<ul type="circle">
-						<li><a href="./">Home</a></li>
-						<li><a href="./contactos.html">Contactos</a></li>
-						<li><a href="./modulos.html">Módulos</a></li>
-						<li><a href="./dinamicas.html">Dinâmicas</a></li>
-            <li><a href="./professores.html">Professores</a></li>
+						<li class="link"><a href="./">Home</a></li>
+						<li class="link"><a href="./contactos.html">Contactos</a></li>
+						<li class="link"><a href="./modulos.html">Módulos</a></li>
+						<li class="link"><a href="./dinamicas.html">Dinâmicas</a></li>
+            <li class="link"><a href="./professores.html">Professores</a></li>
 					</ul>
 				</div>
 			</nav>
 		</header>
 
 		<main>
-			<section class="content text">
+			<section class="main-container">
         <div>
           <h1>Seja muito bem-vindo ao curso de Administração de Sistemas Informáticos e de Base de Dados </h1>
           <h3>Curso pertencente à área das TICs</h3>
@@ -55,7 +58,7 @@
           </map>
         </div>
       </section>
-      <section>
+      <section class="main-container"> 
         <div>
           <h3>Lorem Ipsum</h3>
         </div>
@@ -73,7 +76,7 @@
         </div>
         <hr>
 			</section>
-      <section>
+      <section class="main-container">
         <div>
           <h1>FAQs</h1>
         </div>
@@ -86,7 +89,8 @@
       </section>
       
       <!-- Secão dos contactos -->
-      <section>
+      
+      <section class="main-container" id="contacts">
         <div>
           <div><h3>Entre em contacto</h3></div>    
           <div>
@@ -155,9 +159,10 @@
           </div>
         </div>
       </section>
+      <hr>
     </main>
-    <hr/>
-    <footer>
+    
+    <footer id="page-footer">
       <div>
         <div>
           <ul>
