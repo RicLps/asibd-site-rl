@@ -1,0 +1,67 @@
+/*div > p{
+  font-size: 18px;
+  color: darkgrey;
+  background-color: lightgrey;
+}*/
+
+h1 ~ p{
+  font-size: 20px;
+  font-weight: bold;
+  color: darkgrey;
+}
+
+input, button {
+  padding: 10px;
+}
+
+input {
+  background-color: lightblue;
+}
+
+a:hover {
+  color: red;
+}
+
+input:focus {
+  color: blue;
+  background-color: lightgrey;
+}
+
+input:required {
+  border-left: 4px solid red,
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: purple\:w
+  :
+}
+
+li:first-child {
+  color: green;
+  font-weight: bold;
+}
+
+li:last-child {
+  color: pink;
+  text-decoration: underline;
+}
+
+p:not(.destaque) {
+  color: lightgreen;
+}
