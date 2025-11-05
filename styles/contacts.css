@@ -2,7 +2,7 @@
   font-size: 18px;
   color: darkgrey;
   background-color: lightgrey;
-}*/
+}
 
 h1 ~ p{
   font-size: 20px;
@@ -64,4 +64,23 @@ li:last-child {
 
 p:not(.destaque) {
   color: lightgreen;
+}
+
+p::before {
+  content: ">> ";
+  color: orange;
+  background-color: blue;
+}
+
+p::after{
+  content: "<< ";
+  color: green;
+}*/
+
+input[required] {
+  border: 2px solid red;
+}
+
+input[type="email"] {
+  background-color: lightgrey;
 }
