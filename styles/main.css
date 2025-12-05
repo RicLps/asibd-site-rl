@@ -103,3 +103,61 @@ section > h1 {
   text-align: center;
   text-shadow: 4px 1px #2aba78;
 }
+
+/* =========================== */
+
+.modules-outter {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: rgb(244, 242, 242)
+}
+
+.modules-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.module-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  background-color: rgb(140, 27, 155)
+}
+
+#card-asgbd {
+  flex-basis: 150px;
+  order: 5;
+}
+
+#card-daw {
+  flex-basis: 150px;
+  order: 1;
+}
+
+#card-ss {
+  flex-basis: 150px;
+  order: 3;
+}
+
+#card-gdr {
+  flex-basis: 150px;
+  order: 6;
+}
+
+#card-prog {
+  flex-basis: 150px;
+  order: 4;
+}
+
+#card-mmsi {
+  flex-basis: 150px;
+  order: 2;
+}
