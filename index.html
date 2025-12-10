@@ -1,35 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="pt">
-	<!--O bloco responsavel por definir os itens de cabecalho da pagina, incluindo o proprio titulo-->
-	<head>
-		<meta charset="UTF-8"/>
-		<title>Curso ASIBD - EICM_GDC</title>
-	</head>
-	<!--Divisao do bloco responsavel por representar os conteudos no navegador-->
-	<body>
-		<header>
-			<nav>
+
+<!--O bloco responsavel por definir os itens de cabecalho da pagina, incluindo o proprio titulo-->
+<head>
+	<title>Curso ASIBD - EICM_GDC</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial-scale="1.0">
+	<link rel="stylesheet" type="text/css" href="./styles/base.css">
+	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
+	<script src="https://kit.fontawesome.com/c818a7c46a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<!--Divisao do bloco responsavel por representar os conteudos no navegador-->
+<body>
+	<div class="grid-container">
+		<!-- Estrutura Geral do Cabeçalho-->
+		<header class="header">
+			<nav class="navbar">
 				<div>
-					<img width="120" alt»"Logo do curso" src="./resources/images/logo.png"/>
+					<img width="80" alt»"Logo do curso" src="./resources/images/logo-eicm.png"/>
 				</div>
 
-				<div>
-					<ul type="circle">
-						<li><a href="./">Home</a></li>
-						<li><a href="./contactos.html">Contactos</a></li>
-						<li><a href="./modulos.html">Módulos</a></li>
-						<li><a href="./dinamicas.html">Dinâmicas</a></li>
-            <li><a href="./professores.html">Professores</a></li>
+				<div class="menu">
+					<ul>
+						<li class="link-holder"><a href="./"><i class="fa-solid fa-house"></i> Home</a></li>
+						<li class="link-holder"><a href="./contactos.html"><i class="fa-solid fa-address-book"></i> Contactos</a></li>
+						<li class="link-holder"><a href="./modulos.html"><i class="fa-solid fa-book"></i> Módulos</a></li>
+						<li class="link-holder"><a href="./dinamicas.html"><i class="fa-solid fa-brush"></i> Dinâmicas</a></li>
+						<li class="link-holder"><a href="./professores.html"><i class="fa-solid fa-chalkboard-user"></i> Professores</a></li>
 					</ul>
 				</div>
 			</nav>
 		</header>
 
-		<main class="main">
-    </main>
+		<header class="banner">
+			<div class="main-banner">
+				<h1>Seja Bem-Vindo ao Sítio Web do Curso</h1>
+				<p>Administração de Sistemas Informáticos e de Bases de Dados</p>
+			</div>
+		</header>
 
-    <footer class="footer">
-    </footer>
-	</body>
+		<!-- Conteúdo Principal -->
+		<main class="main">
+			Conteudo
+		</main>
+		<!-- Rodapé da Página-->
+		<footer class="footer">
+			Rodapé
+		</footer>
+	</div>
+</body>
 </html>

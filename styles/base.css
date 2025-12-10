@@ -1,0 +1,88 @@
+.grid-container {
+    font-family: "Montserrat";
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'banner banner banner'
+        'main main aside'
+        'footer footer footer';
+    grid-template-columns: 1fr 1fr 200px;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+}
+/* #2fac75 */
+
+.header {
+    grid-area: header;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0;
+    box-shadow: 2px 2px 8px #2fac75;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 15;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: #313B43;
+}
+
+.link-holder {
+    position: relative;
+    color: #313B43;
+    padding-bottom: 4px;
+}
+
+.link-holder::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #313B43;
+    width: 100%;
+    height: 2px;
+    background-color: #2fac75;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease-out;
+}
+
+.link-holder:hover::after {
+    transform: scaleX(1);
+}
+
+.banner {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
