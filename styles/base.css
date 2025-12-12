@@ -4,14 +4,15 @@
     grid-template-areas: 
         'header header header'
         'banner banner banner'
-        'main main aside'
+        'main main main'
         'footer footer footer';
     grid-template-columns: 1fr 1fr 200px;
     grid-template-rows: auto auto 1fr auto;
-    gap: 10px;
     height: 100vh;
 }
-/* #2fac75 */
+/*Verde do logo: #2fac75 */
+/*Primaria: #19513D */
+/*Secundaria: #5A1935*/
 
 .header {
     grid-area: header;
@@ -85,4 +86,69 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../resources/images/banner-01.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20 0;
+    color: #19513D;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 10, 0, 0.7);
+    z-index: 1;
+}
+
+.main-banner {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1{
+    color: #9ed6c3;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700px;
+    text-shadow: 3px 3px 5px #5A1935/*, -2px -2px 5px #5A1935, 2px -2px 5px #5A1935, -2px 2px 5px #5A1935*/;
+}
+
+.banner p{
+    color: #c6ffec;
+    font-size: 1.3rem;
+}
+
+.outter-course-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 120px;
+}
+
+.outter-course-description h1 {
+    position: relative;
+}
+
+.outter-course-description h1::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    bottom: -15%;
+    left: 50%;
+    width: 70%;
+    height: 2px;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.outter-course-description p {
+    text-align: justify;
+    font-size: 1.3em;
 }
