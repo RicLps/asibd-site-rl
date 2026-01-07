@@ -66,26 +66,34 @@
 				</div>
 				<div class="contacts-area">
 					<div class="contacts-list">
-						<ul>
-							<li><i class="fa-solid fa-phone"></i> Telefone: 232 13 13</li>
-							<li><i class="fa-solid fa-envelope"></i> Email: eicm_sv@cvtelecom.cv</li>
-							<li><i class="fa-solid fa-location-dot"></i> Endereço: Av. Dr. Alberto Leite 5, Mindelo</li>
-							<li><i class="fa-solid fa-browser"></i> Website: <a href="https://eicmgdc.edu.cv/"></a></li>
+						<ul type="none">
+							<li><i class="fa-solid fa-phone"></i> <span>232 13 13</span></li>
+							<li><i class="fa-solid fa-envelope"></i><span>asibd.eicm@gmail.com</span></li>
+							<li><i class="fa-solid fa-link"></i><span>https://asibd.eicm.edu.cv</span></li>
+							<li><i class="fa-solid fa-location-dot"></i><span>Cabo Verde - São Vicente - Mindelo - Av. Dr. Alberto Leite 5</span></li>
 						</ul>
 					</div>
-					<div class="form">
-						<label for="name">Nome do Utilizador</label>
-						<input type="text" id="name" placeholder="Nome de Utilizador">
-						<label for="email">Email</label>
-						<input type="email" id="email" placeholder="exemplo@gmail.com">
-						<label for="subject">Assunto</label>
-						<input type="text" id="subject">
-						<label for="message">Menssagem</label>
-						<textarea id="message"></textarea>
-						<input type="reset" value="Cancelar">
-						<input type="submit" value="Enviar">
+
+					<form action="contacts.php">
+						<div class="form-item">
+							<label for="name">Nome do Utilizador: </label>
+							<input required type="text" name="name" id="name" placeholder="Nome de Utilizador">
+						</div>
+						<div class="form-item">
+							<label for="email">Email: </label>
+							<input required type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+						</div>
+						<div class="form-item">
+							<label for="subject">Assunto: </label>
+							<input required type="text" name="subject" id="subject" placeholder="Assunto">
+						</div>
+						<div class="form-item">
+							<label for="message">Mensagem:</label>
+							<textarea name="message" id="message" placeholder="Mensagem"></textarea>
+						</div>
+						<button type="submit">Enviar</button>
 					</div>
-				</div>
+				</form>
 			</section>
 		</main>
 		<!-- Rodapé da Página-->
