@@ -1,3 +1,7 @@
+html {
+    background-color: #f5f5f5;
+}
+
 .grid-container {
     font-family: "Montserrat";
     display: grid;
@@ -198,17 +202,52 @@
     transform: translateX(-50%);
 }
 
-.contacts-area{
+.contacts-area {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16;
+    justify-content: center;
+    justify-items: center;
+    gap: 10%;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #cacaca;
+    border-radius: 8px;
 }
 
 form {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+}
+
+.contacts-list {
+    width: 40%;
+}
+
+.contacts-list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    gap: 3em;
+    padding: 0px;
+}
+
+.contacts-list ul li{
+    font-size: 20px;
+    color: #535353;
+    font-weight: bold;
+    width: 100%;
+    padding: 7.5px;
+}
+
+.contacts-list ul li:hover{
+    font-size: 20px;
+    color: #2fac75;
+    background-color: #d8d8d8;
+    border-radius: 8px;
 }
 
 .form-item {
@@ -220,23 +259,78 @@ label {
     margin-top: 15px;
     font-weight: bold;
     font-size: 1.3em;
-    color: #3e3e3f;
+    color: #3e3e3e;
 }
 
 input, select, textarea {
     padding: 10px;
     margin-top: 8px;
     border-radius: 8px;
-    border: 1px solid #ccc
+    border: 1px solid #ccc;
 }
 
-button {
-    width: 100px;
-}
-
-input:hover, textarea:hover {
+input:focus, textarea:focus {
     padding: 10px;
     border-radius: 8px;
     border: 2px solid #333232;
     outline: none;
+}
+
+form button {
+    width: 100%;
+    height: 35px;
+    background-color: #2fac75;
+    border: 1px solid white;
+    border-radius: 8px;;
+    color: white;
+    font-weight: bold;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.schedule-title h1 {
+    position: relative;
+}
+
+.schedule-area {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 10%;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #2fac75;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e0fff2;
+}
+
+.schedule-title h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width:50%;
+    height: 2px;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
 }
