@@ -77,7 +77,7 @@ html {
     background-color: #2fac75;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.35s ease-out;
+    transition: transform 0.3s ease-out;
 }
 
 .link-holder:hover::after {
@@ -295,14 +295,28 @@ form button {
 
 .schedule-title h1 {
     position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.schedule-title h1::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    width:30%;
+    height: 2px;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
 }
 
 .schedule-area {
+    width: 100%;
     display: flex;
     justify-content: center;
-    justify-items: center;
-    gap: 10%;
-    width: 100%;
+    border-radius: 15px;
 }
 
 table {
@@ -310,7 +324,8 @@ table {
 }
 
 th, td {
-    padding: 15px 20px;
+    text-align: center;
+    padding: 20px 30px;
     border: 1px solid #ccc;
 }
 
@@ -322,15 +337,3 @@ tbody tr:nth-child(even) {
     background-color: #e0fff2;
 }
 
-.schedule-title h1::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width:50%;
-    height: 2px;
-    background-color: #000;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-50%);
-}
