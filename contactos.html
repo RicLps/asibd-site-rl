@@ -3,9 +3,80 @@
   <head>
     <title>Contactos do Curso</title>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+    <script src="https://kit.fontawesome.com/c818a7c46a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <h1>Página dos Contactos</h1>
+  <body class="grid-container">
+    <header class="header">
+			<nav class="navbar">
+				<div>
+					<img width="80" alt="Logo do curso" src="./resources/images/logo-eicm.png"/>
+				</div>
+
+				<div class="menu">
+					<ul>
+						<li class="link-holder"><a href="./"><i class="fa-solid fa-house"></i> Home</a></li>
+						<li class="link-holder"><a href="./contactos.html"><i class="fa-solid fa-address-book"></i> Contactos</a></li>
+						<li class="link-holder"><a href="./modulos.html"><i class="fa-solid fa-book"></i> Módulos</a></li>
+						<li class="link-holder"><a href="./dinamicas.html"><i class="fa-solid fa-brush"></i> Dinâmicas</a></li>
+						<li class="link-holder"><a href="./professores.html"><i class="fa-solid fa-chalkboard-user"></i> Professores</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+    <header class="banner">
+      <div class="main-banner">
+        <h1>Contactos</h1>
+      </div>
+    </header>
+    <main class="main">
+      <section class="contacts">
+				<div class="contacts-area">
+					<div class="contacts-list">
+						<ul type="none">
+							<li><i class="fa-solid fa-phone"></i> <span> +238 232 13 13</span></li>
+							<li><i class="fa-solid fa-envelope"></i><span> asibd.eicm@gmail.com</span></li>
+							<li><i class="fa-solid fa-link"></i><span> https://asibd.eicm.edu.cv</span></li>
+							<li><i class="fa-solid fa-location-dot"></i><span> Cabo Verde - São Vicente - Mindelo - Av. Dr. Alberto Leite 5</span></li>
+						</ul>
+					</div>
+
+					<form action="contacts.php">
+						<div class="form-item">
+							<label for="name">Nome do Utilizador: </label>
+							<input required type="text" name="name" id="name" placeholder="Nome de Utilizador">
+						</div>
+						<div class="form-item">
+							<label for="email">Email: </label>
+							<input required type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+						</div>
+						<div class="form-item">
+							<label for="subject">Assunto: </label>
+							<input required type="text" name="subject" id="subject" placeholder="Assunto">
+						</div>
+						<div class="form-item">
+							<label for="message">Mensagem:</label>
+							<textarea name="message" id="message" placeholder="Mensagem"></textarea>
+						</div>
+						<button type="submit">Enviar</button>
+					</form>
+				</div>
+			</section>
+      <section class="map">
+        <div>
+          
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>
