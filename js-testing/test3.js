@@ -1,18 +1,13 @@
 //Exercicio 1
-let text = "idiota do caramba seu estupido"
-let arr = text.split(" ")
+/*let text = "idiota do caramba seu estupido"
+let array = text.split(" ")
 let listaPalavras = ["idiota", "estupido", "estrupicio", "desgramado", "caramba"];
-let newText;
+let newText = text;
 
-for (let palavra in listaPalavras){
-    for (let elem of arr){
-        if (arr[elem] == palavra) {
-            newText += arr.replace(arr[elem], "*****")
-        }
-    }
+for (let palavra of listaPalavras){
+    newText = newText.replaceAll(palavra, "*****")
 }
-
-console.log(newText);
+console.log(newText);*/
 
 
 
@@ -26,6 +21,7 @@ console.log(newText);
 let palavra = "vai"
 
 console.log(texto.indexOf(palavra));*/
+
 
 
 
@@ -46,6 +42,7 @@ else {
 
 
 
+
 /*=================================================*/
 
 
@@ -53,10 +50,12 @@ else {
 //Exercicio 4
 /*let nome = "ricardo armindo correia lopes"
 let array = nome.split(" ");
+let novoNome;
 
-for (let nome in array) {
-    nome[0].toUpperCase();
-}*/
+for (let elem in array) {
+    novoNome += array[elem].at(0).toUpperCase() + array[elem].substring(1) + " ";
+}
+console.log(novoNome);*/
 
 
 
@@ -67,11 +66,11 @@ for (let nome in array) {
 //Exercicio 5
 /*let email = "ricardo@gmail.com"
 
-if (!(email.includes("@")) || (email.substring(email.indexOf("."), email[-1]).length > 4 || email.substring(email.indexOf("."), email[-1]).length < 3)) {
-    console.log("Email invalido");
+if (!(email.includes("@")) || (email.substring(email.indexOf(".") + 1, email[-1]).length > 3 || email.substring(email.indexOf(".") + 1, email[-1]).length < 2)) {
+    console.log("Endereço de email invalido");
 }
 else{
-    console.log("Endereco validado com sucesso");
+    console.log("Endereco de email validado com sucesso");
 }*/
 
 
@@ -85,12 +84,14 @@ else{
 let sobrenome = "lopes";
 let nomeEmpresa = "cape verde airlines";
 let empSemEspaco = nomeEmpresa.replace(/ /g, "");
+
 let pais = "Portugal"
 let listaPaises = {
     "Portugal": ".pt",
     "Brasil": ".br",
     "Cabo Verde": ".cv"
 };
+
 let arrEmail = [nome, ".", sobrenome, "@", empSemEspaco, listaPaises[pais]];
 
 let email = arrEmail.join("");
