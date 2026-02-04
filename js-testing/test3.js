@@ -1,14 +1,17 @@
 //Exercicio 1
-let text = "idiota do caramba, seu estupido"
-let array = text.split("")
+let text = "idiota do caramba seu estupido"
+let arr = text.split(" ")
 let listaPalavras = ["idiota", "estupido", "estrupicio", "desgramado", "caramba"];
 let newText;
 
 for (let palavra in listaPalavras){
-    if (text.includes(palavra)){
-        
+    for (let elem of arr){
+        if (arr[elem] == palavra) {
+            newText += arr.replace(arr[elem], "*****")
+        }
     }
 }
+
 console.log(newText);
 
 
@@ -48,12 +51,12 @@ else {
 
 
 //Exercicio 4
-let nome = "ricardo armindo correia lopes"
+/*let nome = "ricardo armindo correia lopes"
 let array = nome.split(" ");
 
 for (let nome in array) {
     nome[0].toUpperCase();
-}
+}*/
 
 
 
@@ -75,5 +78,20 @@ else{
 
 /*==================================================*/
 
-//Exercicio 6
 
+
+//Exercicio 6
+/*let nome = "ricardo";
+let sobrenome = "lopes";
+let nomeEmpresa = "cape verde airlines";
+let empSemEspaco = nomeEmpresa.replace(/ /g, "");
+let pais = "Portugal"
+let listaPaises = {
+    "Portugal": ".pt",
+    "Brasil": ".br",
+    "Cabo Verde": ".cv"
+};
+let arrEmail = [nome, ".", sobrenome, "@", empSemEspaco, listaPaises[pais]];
+
+let email = arrEmail.join("");
+console.log(email);*/
