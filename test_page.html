@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Teste</title>
+</head>
+<body>
+    <h1>Opaaaa</h1>
+    <main>
+        <div id="menu">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contactos</a>
+        </div>
+        <section>
+            
+            <p class="destaque">Como vai meu caro</p>
+        </section>
+    </main>
+    <script>
+        const body = document.body;
+        const firstChild = body.firstElementChild;
+        console.log(firstChild.tagName);
+
+        console.log(firstChild.parentElement == body);
+        const primeiroDestaque = document.querySelector("p.destaque");
+        console.log(primeiroDestaque);
+
+        const linkDosDados = document.querySelectorAll('#menu a');
+        linkDosDados.forEach(link => {;
+            console.log(link.href);
+        });
+
+        const novoParagrafo = document.createElement('p');
+        const texto = document.createTextNode('Este eh um paragrafo novo que criei');
+
+        novoParagrafo.append(texto);
+        document.body.firstChild.appendChild(novoParagrafo);
+
+        const titulo = document.querySelector("h1");
+        titulo.textContent = "Bem vindo";
+    </script>
+</body>
+</html>
