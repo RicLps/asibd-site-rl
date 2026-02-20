@@ -17,8 +17,61 @@
             
             <p class="destaque">Como vai meu caro</p>
         </section>
+        <section>
+            <div>
+                <button onclick="alert('Bo clica diab')">Clique em mim</button>
+            </div>
+            <div>
+                <button id="outroBotao">Outro botao</button>
+            </div>
+            <div>
+                <button id="meuBotao">Clique aqui tbm</button>
+            </div>
+            <div>
+                <button id="btn">BTN</button>
+            </div>
+            <div>
+                <button id="btn2">BTN2</button>
+            </div>
+        </section>
     </main>
     <script>
+
+        const meuBotao = document.querySelector("#meuBotao")
+        const outroBotao = document.querySelector("#outroBotao")
+        const btn = document.getElementById("btn")
+        const btn2 = document.getElementById("btn2")
+        
+        btn.addEventListener("click", () => {alert("Evento")})
+        btn.addEventListener("click", () => {alert("Evento 2")})
+
+        function handleClick(){
+            alert('Botao clicado')
+        }
+
+        function handleMouseOver(){
+            alert('Mouse sobre o botao')
+        }
+
+        btn2.addEventListener("click", handleClick)
+        btn2.addEventListener("mouseover", handleMouseOver)
+
+        meuBotao.onclick = function(){
+            alert("Porra bo clica otra vez")
+        }
+
+        outroBotao.onclick = function(){
+            alert("Burro")
+        }
+
+        meuBotao.mouseover = function(){
+            alert("Burro ao quadrado")
+        }
+
+        meuBotao.mouseout = function(){
+            alert(".")
+        }
+
         const body = document.body;
         const firstChild = body.firstElementChild;
         console.log(firstChild.tagName);
